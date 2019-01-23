@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PickUpItem : InteractableObject {
-    
+
     public Signal pickupSignal;
     public Transform parentTransform;
 
@@ -17,7 +17,7 @@ public class PickUpItem : InteractableObject {
         if (Input.GetButtonDown("Interact") && playerInRange) {
             Pickup(parentTransform);
             pickupSignal.Raise();
-            trigger.enabled = false;
+            this.enabled = false;
 
         }
     }

@@ -9,7 +9,7 @@ public abstract class InteractableObject : MonoBehaviour {
     protected bool playerInRange;
     public Transform itemPos;
     protected bool isHeld;
-   
+
     void Start() {
 
     }
@@ -37,9 +37,8 @@ public abstract class InteractableObject : MonoBehaviour {
         }
     }
 
-    protected void Break() {
-        if (isBreakable) {
-
-        }
+    protected void Break(Animator anim) {
+            anim.SetTrigger("Break");
     }
+    
 }

@@ -9,13 +9,13 @@ public class PlayerController : MonoBehaviour {
     public FloatVariable currentHP;
     public float dashForce;
 
-    private bool isDialoguing;
-    private bool isAttacking;
-    private bool isHoldingItem;
+    public bool isDialoguing;
+    public bool isAttacking;
+    public bool isHoldingItem;
 
     public VectorVariable LookingAtDirection;
     private Vector3 direction;
-    
+
     private Animator anim;
     private Rigidbody2D rb;
 
@@ -101,10 +101,18 @@ public class PlayerController : MonoBehaviour {
     public void SetIsHoldingItem(bool value) {
         isHoldingItem = value;
     }
+
+    public void SetThrowItem() {
+        anim.SetBool("isHoldingItem",false);
+        isHoldingItem = false;
+        if (!Input.GetButtonDown("Attack")) {
+            anim.SetTrigger("Throw");
+        }
+    }
     /********************Utilities *************************************/
     private void GetReferences() {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
-    
+
 }
