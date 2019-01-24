@@ -7,7 +7,6 @@ public class OpenChest : InteractableObject {
     public VectorVariable playerLookAt;
     public VectorVariable facingDirection;
     private Animator anim;
-    
 
     void Start() {
         GetReferences();
@@ -16,17 +15,17 @@ public class OpenChest : InteractableObject {
     // Update is called once per frame
     void Update() {
         if (Input.GetButtonDown("Interact") && playerInRange) {
-            if (playerLookAt.value == facingDirection.value) { 
+            if (playerLookAt.value == facingDirection.value) {
                 Open();
             }
         }
     }
 
-    private void Open(){
+    private void Open() {
         anim.SetTrigger("Open");
     }
 
-      /*********Utility ***********/
+    /*********Utility ***********/
     private void GetReferences() {
         anim = GetComponentInParent<Animator>();
     }
