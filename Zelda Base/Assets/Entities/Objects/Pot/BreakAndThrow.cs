@@ -32,6 +32,13 @@ public class BreakAndThrow : InteractableObject {
 
     }
 
+    private new void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag("PlayerAttack") && !isThrown) {
+            if (isBreakable) {
+                Break(anim);
+            }
+        }
+    }
     /********* Actions*************/
     private void Move() {
         transform.position = itemPos.position;

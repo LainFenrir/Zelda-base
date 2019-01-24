@@ -12,10 +12,10 @@ public class ChangeDirectionLook : MonoBehaviour {
     }
 
     void Update() {
-        if (lookAt.value == Vector2.up) {
+        if (lookAt.value == Vector2.up || lookAt.value == new Vector2(1, 1) || lookAt.value == new Vector2(-1, 1)) {
             transform.localPosition = verticalValue;
         }
-        if (lookAt.value == Vector2.down) {
+        if (lookAt.value == Vector2.down || lookAt.value == new Vector2(1, -1) || lookAt.value == new Vector2(-1, -1)) {
             transform.localPosition = verticalValue * -1;
         }
         if (lookAt.value == Vector2.left) {
@@ -25,5 +25,6 @@ public class ChangeDirectionLook : MonoBehaviour {
         if (lookAt.value == Vector2.right) {
             transform.localPosition = horizontalValue;
         }
+
     }
 }

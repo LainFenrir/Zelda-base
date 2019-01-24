@@ -239,7 +239,7 @@ MonoBehaviour:
   throwDistance: {fileID: 0}
   throwSpot: {fileID: 0}
   throwSignal: {fileID: 11400000, guid: 48ae3e7f57c0ea840a534286c245c274, type: 2}
-  enableScript: {fileID: 0}
+  enableScript: {fileID: 11400000, guid: f22caa2e92627d7409f76d5691093d72, type: 2}
 --- !u!114 &485352792273417637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,7 +295,18 @@ MonoBehaviour:
     signal: {fileID: 11400000, guid: 2a097b141654da14483db433e1b29c21, type: 2}
     response:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 649611526799036405}
+          m_MethodName: CollisionHit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
     responseForSentString:
@@ -315,18 +326,7 @@ MonoBehaviour:
         PublicKeyToken=null
     responseForSentBool:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 649611526799036405}
-          m_MethodName: SetIsHeld
-          m_Mode: 0
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
       m_TypeName: ResponseWithBool, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
 --- !u!1 &6831005057312326340

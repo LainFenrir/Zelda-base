@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8213556133446726174}
   - component: {fileID: 514204683201369064}
+  - component: {fileID: 9094127516871465239}
   m_Layer: 0
   m_Name: Attack_Right_Hitbox
   m_TagString: Untagged
@@ -61,3 +62,15 @@ PolygonCollider2D:
       - {x: 0.55587596, y: -0.7306837}
       - {x: 1.004349, y: -0.2569332}
       - {x: 0.4258029, y: 0.73783135}
+--- !u!114 &9094127516871465239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3522140942751846210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2970a2f2d8fbc448c2b28a71a811de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

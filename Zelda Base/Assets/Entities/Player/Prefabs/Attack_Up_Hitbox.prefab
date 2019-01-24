@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8609644608468859643}
   - component: {fileID: 6580773792347203577}
+  - component: {fileID: 1947843884238472981}
   m_Layer: 0
   m_Name: Attack_Up_Hitbox
   m_TagString: Untagged
@@ -61,3 +62,15 @@ PolygonCollider2D:
       - {x: 0.8378749, y: -0.22935295}
       - {x: 0.6440179, y: 0.8397279}
       - {x: -0.57685894, y: 0.7691643}
+--- !u!114 &1947843884238472981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4539237487061916901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2970a2f2d8fbc448c2b28a71a811de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
